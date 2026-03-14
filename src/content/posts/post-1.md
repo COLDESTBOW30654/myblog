@@ -1,5 +1,5 @@
 ---
-title: 最近看到网上一篇很有趣的论文
+title: 分享一篇网上很有趣的论文
 published: 2026-03-14 23:32:00
 description: 爱意落山河，满纸尽遗憾
 draft: false
@@ -15,7 +15,7 @@ category: 杂七杂八
 ### 以及文章的原文内容
 #### 当然呢如果你感兴趣可以去rubbish那下载，链接呢，我放在文章末尾了
 
-<iframe src="../assets/pdf/1773367190237.pdf" class="w-full" title="爱意落山河，满纸尽遗憾" style="height: calc(-120px + 100vh); min-height: 700px;"></iframe>
+<iframe src="https://blym.top/assets/blog/1773367190237.pdf" class="w-full" title="爱意落山河，满纸尽遗憾" style="height: calc(-120px + 100vh); min-height: 700px;"></iframe>
 
 ### 最后呢，送给各位一句话
 愿你，此后余生，有爱可期，有人懂你，深情不再枉付，心动皆有回应，爱意不 落山河，余生再无遗憾。 
