@@ -14,7 +14,7 @@ category: 杂七杂八
 
 ### 原文呢，各位就去末尾的链接中看吧
 
-#### 最后呢，送给各位一句话
+#### 最后，送给各位一句话
 愿你，此后余生，有爱可期，有人懂你，深情不再枉付，心动皆有回应，爱意不 落山河，余生再无遗憾。 
 
 [王老师, 龙老师, 邹老师 (2026). 爱意落山河，满纸尽遗憾. Rubbish]:[爱意落山河，满纸尽遗憾 - Rubbish — An Interdisciplinary Journal](https://rubbish-journal.org/zh/articles/0d661320-cc51-4e0c-a059-cc6fc2775c23)
