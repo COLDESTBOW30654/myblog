@@ -6,14 +6,14 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"check": "astro check",
-		"build": "node scripts/update-git-history.js && astro build && pagefind --site dist",
+		"build": "astro build && pagefind --site dist",
 		"preview": "astro preview",
 		"astro": "astro",
 		"type-check": "tsc --noEmit --isolatedDeclarations",
 		"new-post": "node scripts/new-post.js",
+		"update-diff": "node scripts/update-diff.js",
 		"format": "biome format --write ./src",
-		"lint": "biome check --write ./src",
-		"update-history": "node scripts/update-git-history.js"
+		"lint": "biome check --write ./src"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.6",

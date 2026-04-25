@@ -9,7 +9,6 @@ import ClarityAnalytics from "@components/ClarityAnalytics.astro";
 import ConfigCarrier from "@components/ConfigCarrier.astro";
 import BackToTop from "@components/control/BackToTop.astro";
 import NewPostNotification from "@components/widget/NewPostNotification.astro";
-import PostDiffInArticle from "@components/widget/PostDiffInArticle.astro";
 import {
 	analyticsConfig,
 	giscusConfig,
@@ -204,7 +203,6 @@ const bannerOffset =
 			<ClarityAnalytics projectId={analyticsConfig.clarity.projectId} />
 		)}
 		<NewPostNotification />
-		<PostDiffInArticle />
 		<BackToTop />
 		<div id="bg-box"></div>
 		<ConfigCarrier></ConfigCarrier>

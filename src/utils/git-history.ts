@@ -9,21 +9,16 @@ export interface Commit {
 
 export function getPostHistory(postId: string): Commit[] {
 	try {
-		const normalizedId = postId.replace(/\\/g, "/");
-
-		if (gitHistory?.[normalizedId]) {
-			return gitHistory[normalizedId];
+		let normalizedId = postId.replace(/\\/g, "/");
+		
+		if (!normalizedId.endsWith('.md') && !normalizedId.endsWith('.mdx')) {
+			normalizedId += '.md';
 		}
 
-		const idWithoutPrefix = normalizedId.replace(/^posts\//, "");
-		if (gitHistory?.[idWithoutPrefix]) {
-			return gitHistory[idWithoutPrefix];
-		}
-
-		const parts = normalizedId.split("/");
-		const filename = parts[parts.length - 1];
-		if (gitHistory?.[filename]) {
-			return gitHistory[filename];
+		const historyMap = gitHistory as Record<string, Commit[]>;
+		
+		if (historyMap?.[normalizedId]) {
+			return historyMap[normalizedId];
 		}
 
 		return [];

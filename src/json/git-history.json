@@ -1,29 +1,12 @@
 {
-  "yiyan.md": [
+  "daily-1.md": [
     {
       "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
       "date": "2026-02-25 00:44:14 +0800",
       "message": "更新了一堆新功能，美化了网站"
     }
   ],
-  "yiyan-1.md": [
-    {
-      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
-      "date": "2026-02-25 00:44:14 +0800",
-      "message": "更新了一堆新功能，美化了网站"
-    }
-  ],
-  "update.md": [
-    {
-      "hash": "c198765dac91ce5796100f0e684ee9ac89e17364",
-      "date": "2026-02-26 15:53:25 +0800",
-      "message": "移除对Netlify 部署的支持"
-    },
-    {
-      "hash": "df0061a10163ff2bf9b4550104a686b64ca33b66",
-      "date": "2026-02-25 14:13:48 +0800",
-      "message": "Update update.md"
-    },
+  "post-diff-guide.md": [
     {
       "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
       "date": "2026-02-25 00:44:14 +0800",
@@ -35,13 +18,6 @@
       "hash": "3a6bae40fa935ed9ae6df7b75c3edb6a4237c63a",
       "date": "2026-02-27 17:22:52 +0800",
       "message": "新增文章“视奸我 - 网易云音乐播放状态展示”"
-    }
-  ],
-  "post-diff-guide.md": [
-    {
-      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
-      "date": "2026-02-25 00:44:14 +0800",
-      "message": "更新了一堆新功能，美化了网站"
     }
   ],
   "post-1.md": [
@@ -91,7 +67,31 @@
       "message": "Initial commit"
     }
   ],
-  "daily-1.md": [
+  "update.md": [
+    {
+      "hash": "c198765dac91ce5796100f0e684ee9ac89e17364",
+      "date": "2026-02-26 15:53:25 +0800",
+      "message": "移除对Netlify 部署的支持"
+    },
+    {
+      "hash": "df0061a10163ff2bf9b4550104a686b64ca33b66",
+      "date": "2026-02-25 14:13:48 +0800",
+      "message": "Update update.md"
+    },
+    {
+      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
+      "date": "2026-02-25 00:44:14 +0800",
+      "message": "更新了一堆新功能，美化了网站"
+    }
+  ],
+  "yiyan.md": [
+    {
+      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
+      "date": "2026-02-25 00:44:14 +0800",
+      "message": "更新了一堆新功能，美化了网站"
+    }
+  ],
+  "yiyan-1.md": [
     {
       "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
       "date": "2026-02-25 00:44:14 +0800",
