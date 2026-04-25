@@ -115,12 +115,12 @@ export const analyticsConfig = {
 export const gitHubEditConfig = {
 	enable: true,
 	baseUrl:
-		"https://github.com/COLDESTBOW30654/COLDESTBOW30654.github.io/blob/main/src/content/posts",
+		"https://github.com/COLDESTBOW30654/myblog/blob/main/src/content/posts",
 };
 
 export const giscusConfig = {
 	enable: true,
-	dataRepo: "COLDESTBOW30654/COLDESTBOW30654.github.io",
+	dataRepo: "COLDESTBOW30654/myblog",
 	dataRepoId: "R_kgDOLd4jdg",
 	dataCategory: "Announcements",
 	dataCategoryId: "DIC_kwDOLd4jds4Cgkim",
