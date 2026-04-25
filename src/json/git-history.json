@@ -1,12 +1,10 @@
 {
   "daily-1.md": [
     {
-      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
-      "date": "2026-02-25 00:44:14 +0800",
-      "message": "更新了一堆新功能，美化了网站"
-    }
-  ],
-  "post-diff-guide.md": [
+      "hash": "c0db2322e063838790eba755434c176dfe58422f",
+      "date": "2026-04-25 14:14:43 +0800",
+      "message": "转向部分图片cdn"
+    },
     {
       "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
       "date": "2026-02-25 00:44:14 +0800",
@@ -65,6 +63,13 @@
       "message": "Initial commit"
     }
   ],
+  "post-diff-guide.md": [
+    {
+      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
+      "date": "2026-02-25 00:44:14 +0800",
+      "message": "更新了一堆新功能，美化了网站"
+    }
+  ],
   "project-1.md": [
     {
       "hash": "3a6bae40fa935ed9ae6df7b75c3edb6a4237c63a",
@@ -72,7 +77,24 @@
       "message": "新增文章“视奸我 - 网易云音乐播放状态展示”"
     }
   ],
+  "yiyan-1.md": [
+    {
+      "hash": "f9acbdd24a67a67d822d92b7e0121bade5a35a3f",
+      "date": "2026-04-25 13:05:07 +0800",
+      "message": "再次修复文章更新历史功能"
+    },
+    {
+      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
+      "date": "2026-02-25 00:44:14 +0800",
+      "message": "更新了一堆新功能，美化了网站"
+    }
+  ],
   "update.md": [
+    {
+      "hash": "c0db2322e063838790eba755434c176dfe58422f",
+      "date": "2026-04-25 14:14:43 +0800",
+      "message": "转向部分图片cdn"
+    },
     {
       "hash": "f9acbdd24a67a67d822d92b7e0121bade5a35a3f",
       "date": "2026-04-25 13:05:07 +0800",
@@ -94,16 +116,11 @@
       "message": "更新了一堆新功能，美化了网站"
     }
   ],
-  "yiyan-1.md": [
+  "project-2.md": [
     {
-      "hash": "f9acbdd24a67a67d822d92b7e0121bade5a35a3f",
-      "date": "2026-04-25 13:05:07 +0800",
-      "message": "再次修复文章更新历史功能"
-    },
-    {
-      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
-      "date": "2026-02-25 00:44:14 +0800",
-      "message": "更新了一堆新功能，美化了网站"
+      "hash": "c0db2322e063838790eba755434c176dfe58422f",
+      "date": "2026-04-25 14:14:43 +0800",
+      "message": "转向部分图片cdn"
     }
   ],
   "yiyan.md": [
