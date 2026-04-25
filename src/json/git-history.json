@@ -1,26 +1,10 @@
 {
-  "daily-1.md": [
-    {
-      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
-      "date": "2026-02-25 00:44:14 +0800",
-      "message": "更新了一堆新功能，美化了网站"
-    }
-  ],
-  "post-diff-guide.md": [
-    {
-      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
-      "date": "2026-02-25 00:44:14 +0800",
-      "message": "更新了一堆新功能，美化了网站"
-    }
-  ],
-  "project-1.md": [
-    {
-      "hash": "3a6bae40fa935ed9ae6df7b75c3edb6a4237c63a",
-      "date": "2026-02-27 17:22:52 +0800",
-      "message": "新增文章“视奸我 - 网易云音乐播放状态展示”"
-    }
-  ],
   "post-1.md": [
+    {
+      "hash": "76c7264ca20d65317ffd0c4e819bb2248d61b517",
+      "date": "2026-03-21 02:57:34 +0800",
+      "message": "更新 post-1.md"
+    },
     {
       "hash": "47172260e7f8d5dc047aa4c351a3ea52d95cf4a3",
       "date": "2026-03-15 01:06:57 +0800",
@@ -67,7 +51,38 @@
       "message": "Initial commit"
     }
   ],
+  "post-diff-guide.md": [
+    {
+      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
+      "date": "2026-02-25 00:44:14 +0800",
+      "message": "更新了一堆新功能，美化了网站"
+    }
+  ],
+  "project-1.md": [
+    {
+      "hash": "3a6bae40fa935ed9ae6df7b75c3edb6a4237c63a",
+      "date": "2026-02-27 17:22:52 +0800",
+      "message": "新增文章“视奸我 - 网易云音乐播放状态展示”"
+    }
+  ],
+  "yiyan-1.md": [
+    {
+      "hash": "f9acbdd24a67a67d822d92b7e0121bade5a35a3f",
+      "date": "2026-04-25 13:05:07 +0800",
+      "message": "再次修复文章更新历史功能"
+    },
+    {
+      "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
+      "date": "2026-02-25 00:44:14 +0800",
+      "message": "更新了一堆新功能，美化了网站"
+    }
+  ],
   "update.md": [
+    {
+      "hash": "f9acbdd24a67a67d822d92b7e0121bade5a35a3f",
+      "date": "2026-04-25 13:05:07 +0800",
+      "message": "再次修复文章更新历史功能"
+    },
     {
       "hash": "c198765dac91ce5796100f0e684ee9ac89e17364",
       "date": "2026-02-26 15:53:25 +0800",
@@ -84,14 +99,14 @@
       "message": "更新了一堆新功能，美化了网站"
     }
   ],
-  "yiyan.md": [
+  "daily-1.md": [
     {
       "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
       "date": "2026-02-25 00:44:14 +0800",
       "message": "更新了一堆新功能，美化了网站"
     }
   ],
-  "yiyan-1.md": [
+  "yiyan.md": [
     {
       "hash": "26af231e993aec2e7810a005a3f5da9e71d893d0",
       "date": "2026-02-25 00:44:14 +0800",
