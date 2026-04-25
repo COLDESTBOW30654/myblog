@@ -82,61 +82,50 @@ pnpm lint
 
 ## 🚢 部署流程
 
-### 自动构建（推荐）
-
-**重要**：`pnpm build` 命令现在会自动更新文章修订历史！
-
-```bash
-# 构建项目（自动更新Git历史）
-pnpm build
-```
-
-构建流程会自动执行：
-1. 更新文章修订历史（`update-diff.js`）
-2. 构建 Astro 项目
-3. 生成 Pagefind 搜索索引
-
-### 手动部署流程
-
-如果需要手动控制，可以分步执行：
-
-```bash
-# 1. 更新文章修订历史
-pnpm update-diff
-
-# 2. 类型检查（可选但推荐）
-pnpm type-check
-
-# 3. 构建项目
-pnpm build
-
-# 4. 预览构建结果（可选）
-pnpm preview
-```
-
-### 自动部署注意事项
-
-**关键**：确保 `src/json/git-history.json` 文件已提交到仓库！
-
-- ✅ **本地开发**：`pnpm build` 会自动更新 Git 历史
-- ✅ **自动部署**：需要确保 CI/CD 环境有完整的 Git 历史
-- ⚠️ **首次部署**：请先在本地运行 `pnpm update-diff` 并提交 `git-history.json`
-
 ### 推荐的部署流程
 
+**重要**：每次部署前，请按以下顺序执行命令：
+
 ```bash
-# 1. 在本地更新Git历史
+# 1. 更新文章修订历史（如果有文章修改）
 pnpm update-diff
 
 # 2. 提交更改
 git add src/json/git-history.json
 git commit -m "chore: 更新文章修订历史"
 
-# 3. 推送到远程仓库
-git push origin main
+# 3. 构建项目
+pnpm build
 
-# 4. 自动部署会自动运行 pnpm build
+# 4. 预览构建结果（可选）
+pnpm preview
+
+# 5. 推送到远程仓库
+git push origin main
 ```
+
+### 构建项目
+
+```bash
+pnpm build
+```
+
+构建流程：
+1. 构建 Astro 项目
+2. 生成 Pagefind 搜索索引
+
+### 手动更新文章修订历史
+
+```bash
+pnpm update-diff
+```
+
+此命令会从 Git 仓库提取所有文章的提交历史，生成 `src/json/git-history.json` 文件。
+
+**注意**：
+- ✅ 在提交代码前手动运行此命令
+- ✅ 确保 `git-history.json` 文件被提交到仓库
+- ⚠️ 构建时不会自动更新，需要手动执行
 
 ## ✨ 新功能说明
 
