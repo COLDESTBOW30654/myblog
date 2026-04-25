@@ -5,4 +5,4 @@ draft: false
 ---
 
 # 今天的月亮格外圆，送给你
-![月球](../images/daily-1/IMG_20240524_210312.jpg)
+![月球](https://cdn.blym.top/blog/images/daily-1/IMG_20240524_210312.jpg)
