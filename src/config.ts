@@ -54,7 +54,7 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "友链",
-			url: "https://blym.top/friend-links/",
+			url: "https://blym.top/#friends",
 			external: true,
 		},
 		{
