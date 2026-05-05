@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "白鹿原嚒",
-	subtitle: "白鹿原嚒的小站",
+	subtitle: "白鹿原嚒的博客",
 	lang: "zh_CN",
 	themeColor: {
 		hue: 120, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345

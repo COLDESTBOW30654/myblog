@@ -300,7 +300,7 @@ Content-Type: application/json
         const secs = Math.floor(seconds % 60);
         return mins.toString().padStart(2, '0') + ':' + secs.toString().padStart(2, '0');
     }
-
+    
     function showNotPlaying() {
         const dot = document.getElementById('music-status-dot');
         const title = document.getElementById('music-section-title');
@@ -313,7 +313,7 @@ Content-Type: application/json
         const currentTime = document.getElementById('music-current-time');
         const duration = document.getElementById('music-duration');
         const lyricsWrapper = document.getElementById('music-lyrics-wrapper');
-
+    
         if (dot) { dot.className = 'status-dot'; }
         if (title) title.textContent = '未在播放';
         if (songTitle) songTitle.textContent = '未在播放';
@@ -326,53 +326,53 @@ Content-Type: application/json
         if (duration) duration.textContent = '00:00';
         if (lyricsWrapper) lyricsWrapper.style.display = 'none';
     }
-
+    
     function showPaused() {
         const dot = document.getElementById('music-status-dot');
         if (dot) dot.className = 'status-dot';
     }
-
+    
     function updateLocalProgress() {
         if (!lastMusicData || !lastMusicData.playing) return;
-
+    
         const now = Date.now();
         const timeSinceProgressChange = now - lastProgressTime;
-
+    
         if (timeSinceProgressChange > NOT_PLAYING_THRESHOLD) {
             showNotPlaying();
             return;
         }
-
+    
         if (timeSinceProgressChange > PAUSE_THRESHOLD) {
             showPaused();
             return;
         }
-
+    
         if (!lastMusicData.playing.isPlaying) return;
-
+    
         const progress = lastMusicData.playing.progress || {};
         const elapsedMs = now - lastUpdateTime;
-
+    
         if (elapsedMs > 30000) return;
-
+    
         const currentMs = (progress.currentTime || 0) + elapsedMs;
         const durationMs = progress.duration || 1;
         const percent = Math.min(100, Math.max(0, (currentMs / durationMs) * 100));
-
+    
         const progressBar = document.getElementById('music-progress-bar');
         const currentTimeEl = document.getElementById('music-current-time');
-
+    
         if (progressBar) progressBar.style.width = percent + '%';
         if (currentTimeEl) currentTimeEl.textContent = formatTime(currentMs / 1000);
     }
-
+    
     function updateMusic() {
         fetch(API_URL + '?action=current')
             .then(res => res.json())
             .then(response => {
                 const data = response.data;
                 if (!data || !data.playing) return;
-
+    
                 const now = Date.now();
                 const rawProgress = data.playing.progress?.currentTime || 0;
                 const currentProgress = Math.floor(rawProgress / PROGRESS_CHANGE_THRESHOLD);
@@ -381,24 +381,24 @@ Content-Type: application/json
                     lastProgressTime = now;
                     lastProgressValue = currentProgress;
                 }
-
+    
                 lastMusicData = data;
                 lastUpdateTime = now;
-
+    
                 const song = data.playing.song || {};
                 const progress = data.playing.progress || {};
                 const lyrics = data.playing.lyrics || {};
                 const isPlaying = data.playing.isPlaying || false;
-
+    
                 const timeSinceProgressChange = now - lastProgressTime;
                 const isPaused = timeSinceProgressChange > PAUSE_THRESHOLD;
                 const isNotPlaying = timeSinceProgressChange > NOT_PLAYING_THRESHOLD;
-
+    
                 if (isNotPlaying) {
                     showNotPlaying();
                     return;
                 }
-
+    
                 const dot = document.getElementById('music-status-dot');
                 const title = document.getElementById('music-section-title');
                 const songTitle = document.getElementById('music-title');
@@ -411,11 +411,11 @@ Content-Type: application/json
                 const duration = document.getElementById('music-duration');
                 const lyricsWrapper = document.getElementById('music-lyrics-wrapper');
                 const lyricsEl = document.getElementById('music-lyrics');
-
+    
                 if (title) {
                     title.textContent = (isPlaying && !isPaused) ? '正在播放' : '已暂停';
                 }
-
+    
                 if (dot) {
                     if (isPlaying && !isPaused) {
                         dot.className = 'status-dot playing';
@@ -423,14 +423,14 @@ Content-Type: application/json
                         dot.className = 'status-dot';
                     }
                 }
-
+    
                 if (songTitle) songTitle.textContent = song.name || '未在播放';
                 if (artist) {
                     const artists = song.artists || [];
                     artist.textContent = artists.length > 0 ? artists.join(' / ') : '-';
                 }
                 if (album) album.textContent = song.album?.name || '-';
-
+    
                 if (cover && coverPlaceholder) {
                     if (song.album?.cover) {
                         cover.src = song.album.cover;
@@ -441,11 +441,11 @@ Content-Type: application/json
                         coverPlaceholder.style.display = 'flex';
                     }
                 }
-
+    
                 if (progressBar) progressBar.style.width = (progress.percent || 0) + '%';
                 if (currentTime) currentTime.textContent = progress.formattedCurrentTime || '00:00';
                 if (duration) duration.textContent = progress.formattedDuration || '00:00';
-
+    
                 if (lyricsWrapper && lyricsEl) {
                     if (lyrics.available && lyrics.raw) {
                         lyricsEl.textContent = lyrics.raw.substring(0, 100);
@@ -460,7 +460,7 @@ Content-Type: application/json
                 if (dot) dot.className = 'status-dot';
             });
     }
-
+    
     updateMusic();
     setInterval(updateMusic, 1000);
     setInterval(updateLocalProgress, 100);
