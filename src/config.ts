@@ -58,13 +58,13 @@ export const navBarConfig: NavBarConfig = {
 			external: true,
 		},
 		{
-			name: "状态监控",
-			url: "https://status.blym.top/status/web",
-			external: true,
-		},
-		{
 			name: "GitHub",
 			url: "https://github.com/COLDESTBOW30654",
+			external: true,
+		},
+				{
+			name: "状态监控",
+			url: "https://gatus.blym.top/",
 			external: true,
 		},
 	],
